@@ -1,6 +1,7 @@
-.App{
-  display:grid;
+.App {
+  display: grid;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -53,10 +54,11 @@ button:hover {
 
 .user-block {
   display: flex;
-    align-items: center;
-    margin: auto;
-    background-color: #fcfcfc;
+  align-items: center;
+  margin: auto;
+  background-color: #fcfcfc;
 }
+
 .container {
   max-width: 500px;
   margin: 0 auto;
@@ -75,4 +77,3 @@ img {
 p {
   margin-bottom: 10px;
 }
-

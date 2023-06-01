@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,6 @@ const ListPage = () => {
       .then(response => response.json())
       .then(data => {
         dispatch({ type: 'SET_USERS', payload: data.data });
-        // dispatch({ type: 'SET_CURRENT_PAGE', payload: data.total_pages });
         dispatch({ type: 'SET_TOTAL_PAGE', payload: data.total_pages });
       });
   }, [currentPage]);
@@ -45,8 +44,6 @@ const ListPage = () => {
       </ul>
       <div>
         <button onClick={() => setPageData('previous') }>Previous</button>
-        {/* <span>Page : {currentPage}</span>
-        <span>Total Pages : {totalPage}</span> */}
         <button onClick={() => setPageData('next') }>Next</button>
       </div>
     </div>

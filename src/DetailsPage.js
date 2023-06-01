@@ -22,9 +22,7 @@ const DetailsPage = () => {
   return (
     <>
       <div><h1>User Details</h1></div>
-
       <div className='user-block'>
-
         <div>
           <img src={selectedUser.avatar} alt="Avatar" />
         </div>
